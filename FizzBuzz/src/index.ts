@@ -1,10 +1,10 @@
-export const getFizzBuzz = (number) => {
-  if (number % 3 === 0) {
-    return 'Fizz';
-  }
-  if (number % 5 === 0) {
-    return 'Buzz';
-  }
+import { getFizzBuzz } from './fizzBuzzService';
 
-  return '';
+const tryFizzBuzzForOneToCent = () => {
+  for (let index = 1; index <= 100; index++) {
+    // eslint-disable-next-line no-console
+    console.log(`${index} : ${getFizzBuzz(index)}`);
+  }
 };
+
+tryFizzBuzzForOneToCent();

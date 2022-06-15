@@ -5,7 +5,8 @@
   "author": "Milbrin",
   "license": "MIT",
   "scripts": {
-    "test": "mocha -r ts-node/esm register tests/**/*.test.ts"
+    "test": "mocha -r ts-node/esm register tests/**/*.test.ts",
+    "launch": "ts-node $1"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
